@@ -1,0 +1,21 @@
+{
+  "name": "exp2_shakespeare",
+  "data_file": "data_shakespeare.txt",
+  "data_characters": 1115394,
+  "vocab_size": 65,
+  "parameters": 816705,
+  "lr": 0.001,
+  "steps": 5000,
+  "embed": 128,
+  "layers": 4,
+  "heads": 4,
+  "dropout": 0.1,
+  "batch": 16,
+  "block": 64,
+  "seed": 42,
+  "best_val_loss": 1.6625,
+  "best_step": 4999,
+  "final_train_loss": 1.4869,
+  "final_val_loss": 1.6625,
+  "seconds": 1028.4
+}
