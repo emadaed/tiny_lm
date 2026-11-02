@@ -1,0 +1,67 @@
+Ahmad is learning artificial intelligence from the ground up.
+Ahmad builds software to understand how it really works.
+Artificial intelligence learns patterns from data.
+A language model predicts the next character from the characters before it.
+We learn by building small models from scratch, one piece at a time.
+
+Ahmad spent many years working in supply chain and operations.
+He managed logistics, planning, and coordination across teams.
+Now Ahmad is teaching himself the mathematics behind machine learning.
+He calls himself a zero guy, because he built domain expertise first.
+Then he taught himself to code the systems that support that expertise.
+
+A tokenizer turns raw text into a sequence of integers.
+Every character in the vocabulary gets its own unique integer id.
+An embedding table turns each integer id into a vector of numbers.
+The embedding vectors start out random and become meaningful through training.
+Position embeddings tell the model where each character sits in the sequence.
+
+Self attention lets the model decide which earlier characters matter most.
+Every position produces a query vector, a key vector, and a value vector.
+The query is compared against every key to produce attention scores.
+The scores are divided by the square root of the key dimension for stability.
+A softmax turns the scores into probabilities that sum to one.
+Those probabilities are used to blend the value vectors together.
+
+Causal masking stops the model from looking at future characters.
+When predicting the next character, the model may only see the past.
+This is why the mask is shaped like a lower triangular matrix.
+Multi head attention runs several attention heads in parallel.
+Each head can learn to focus on a different kind of pattern.
+The outputs of all the heads are concatenated and projected back down.
+
+A feed forward network gives the model more capacity to transform information.
+It is applied to every position independently, after attention.
+Layer normalization keeps the numbers flowing through the network stable.
+Residual connections let information skip past each layer unchanged.
+A transformer block combines attention, a feed forward layer, and normalization.
+Stacking several transformer blocks lets the model build deeper representations.
+
+The final layer projects the internal representation back into vocabulary space.
+Each position in the sequence gets a score for every possible next character.
+These scores are called logits, and they are not yet probabilities.
+A softmax function converts logits into a probability distribution.
+Cross entropy loss measures how far the predicted distribution is from the truth.
+A confident wrong prediction is punished much more than an unsure one.
+
+Backpropagation computes the gradient of the loss with respect to every weight.
+An optimizer like AdamW uses those gradients to update the weights.
+The learning rate controls how large each update step is.
+Training repeats this cycle thousands of times until the loss goes down.
+Dropout randomly disables some connections during training to reduce overfitting.
+A validation set checks whether the model is generalizing or just memorizing.
+
+Ahmad wants to understand every moving part before scaling anything up.
+He is not trying to build ChatGPT on his first attempt.
+He is building a small laboratory to learn how language models actually work.
+Once the fundamentals are solid, the model can grow larger and the data can grow richer.
+Character level models can later be replaced with subword tokenizers.
+Small experiments today make large systems understandable tomorrow.
+
+Software engineering discipline matters just as much as the mathematics.
+Clear file structure, small functions, and good naming make code easier to trust.
+Saving configuration alongside model weights prevents painful mismatches later.
+Checking your assumptions with a validation loss is safer than trusting training loss alone.
+Warnings are more useful than silent failures when something goes wrong.
+Ahmad is building Ahmad-AI the same way he approaches supply chain problems.
+Understand the fundamentals, measure everything, and build up from solid ground.
