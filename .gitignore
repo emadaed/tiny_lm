@@ -3,3 +3,6 @@ __pycache__
 .venv/
 docs
 .env
+data.txt
+data_shakespeare.txt
+tiny_lm.pt

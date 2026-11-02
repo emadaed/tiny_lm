@@ -1,0 +1,21 @@
+{
+  "name": "exp0_baseline",
+  "data_file": "data.txt",
+  "data_characters": 4154,
+  "vocab_size": 49,
+  "parameters": 30513,
+  "lr": 0.0003,
+  "steps": 3000,
+  "embed": 32,
+  "layers": 2,
+  "heads": 4,
+  "dropout": 0.1,
+  "batch": 16,
+  "block": 64,
+  "seed": 42,
+  "best_val_loss": 2.4531,
+  "best_step": 2900,
+  "final_train_loss": 2.2021,
+  "final_val_loss": 2.4588,
+  "seconds": 185.2
+}
